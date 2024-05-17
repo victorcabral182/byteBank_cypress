@@ -7,7 +7,6 @@ describe('Formulário de Cadastro', () => {
     cy.getByData('nome-input').type('Gui Lima')
     cy.getByData('email-input').type('gui@email.com')
     cy.getByData('senha-input').type('456789')
-    // cy.getByData('checkbox-input')
     cy.getByData('botao-enviar').click()
     cy.getByData('mensagem-sucesso')
       .should('exist')
